@@ -51,7 +51,6 @@ const createPokeCard = (pokemon) => {
     div.style.backgroundColor = color;
     
     const Html = `
-
     <div class = 'img-container'>
         <img src = "${pokemon.imageUrl}"/>
     </div>
