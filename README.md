@@ -1,3 +1,9 @@
-#WEBPACK EJERCICIO
+#Pokedex
 
-Este es un pequeño ejercicio en webpack para aprender más a fondo su configuración.
+This pokedex was build using HTML, CSS, JS & Webpack
+
+API: 
+
+`
+    https://pokemon-bedu.herokuapp.com/v1/pokemons/
+`
