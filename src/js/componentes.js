@@ -27,7 +27,6 @@ const typeColors = {
 
 
 const main_types = Object.keys(typeColors)
-console.log(main_types)
 
 const pokemonList = async () => {
     for (let i = 1; i <= pokemon_total; i++) {
@@ -66,5 +65,5 @@ const createPokeCard = (pokemon) => {
     pokeElement.appendChild(div)
 }
 
-export const init = () =>{pokemonList()}
+export {pokemonList}
 

@@ -28,10 +28,10 @@ module.exports = {
                 test : /styles.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
             },
-            // {
-            //     test : /\.(png|jpg?e|gif)$/i,
-            //     loader: 'file-loader', 
-            // }
+            {
+                test : /\.(png|jpg?e|gif)$/i,
+                loader: 'file-loader', 
+            }
         ]
     },
     plugins: [
@@ -44,13 +44,13 @@ module.exports = {
             filename: '[name].css',
             ignoreOrder : false
         }),
-        // new CopyWebPack({
-        //     patterns : [
-        //         {
-        //             from : 'src/assets/', to: 'assets/'
-        //         }
-        //     ]
-        // })
+        new CopyWebPack({
+            patterns : [
+                {
+                    from : 'src/assets/', to: 'assets/'
+                }
+            ]
+        })
     ]
  
  

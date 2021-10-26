@@ -32,10 +32,10 @@ module.exports = {
                 test : /styles.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
             },
-            // {
-            //     test : /\.(png|jpg?e|gif)$/i,
-            //     loader: 'file-loader', 
-            // },
+            {
+                test : /\.(png|jpg?e|gif)$/i,
+                loader: 'file-loader', 
+            },
 
             {
                 test: /\.m?js$/,
@@ -69,13 +69,13 @@ module.exports = {
             filename: '[name].[fullhash].css',
             ignoreOrder : false
         }),
-        // new CopyWebPack({
-        //     patterns : [
-        //         {
-        //             from : 'src/assets/', to: 'assets/'
-        //         }
-        //     ]
-        // })
+        new CopyWebPack({
+            patterns : [
+                {
+                    from : 'src/assets/', to: 'assets/'
+                }
+            ]
+        })
     ]
  
  

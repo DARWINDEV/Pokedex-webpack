@@ -1,4 +1,4 @@
-import { init } from './js/componentes';
+import * as POKEMON from './js/componentes'
 import './styles.css';
 
-init()
+POKEMON.pokemonList()
